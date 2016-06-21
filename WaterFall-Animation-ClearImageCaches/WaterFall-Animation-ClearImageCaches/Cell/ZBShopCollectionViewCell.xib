@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="dYX-Bt-49o" customClass="ZBShopCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="220" height="360"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="220" height="360"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mr0-Hs-S9u">
+                        <rect key="frame" x="0.0" y="250" width="220" height="110"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0M-kQ-FRD">
+                                <rect key="frame" x="195" y="79" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="Gi5-NM-msE"/>
+                                    <constraint firstAttribute="height" constant="15" id="PKc-ju-XLW"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="braceletLiked"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBU-wJ-EhY">
+                                <rect key="frame" x="37" y="72" width="28.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chatListCellHead" translatesAutoresizingMaskIntoConstraints="NO" id="o6Y-z2-dkl">
+                                <rect key="frame" x="10" y="72" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="4Gk-nU-I5k"/>
+                                    <constraint firstAttribute="height" constant="22" id="WS3-Cv-qbr"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="黑黑恶化IE黑恶和hi额呵呵范德萨范德萨 第三方第三方是但是反倒是  " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7IL-bc-A4A">
+                                <rect key="frame" x="8" y="10" width="204" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7IL-bc-A4A" secondAttribute="trailing" constant="8" id="A3H-cG-EwT"/>
+                            <constraint firstAttribute="bottom" secondItem="d0M-kQ-FRD" secondAttribute="bottom" constant="16" id="AJC-8N-zAM"/>
+                            <constraint firstAttribute="trailing" secondItem="d0M-kQ-FRD" secondAttribute="trailing" constant="10" id="DfJ-rY-6G7"/>
+                            <constraint firstItem="7IL-bc-A4A" firstAttribute="leading" secondItem="mr0-Hs-S9u" secondAttribute="leading" constant="8" id="PHr-Kq-hkk"/>
+                            <constraint firstAttribute="height" constant="110" id="an2-cS-OxY"/>
+                            <constraint firstAttribute="bottom" secondItem="o6Y-z2-dkl" secondAttribute="bottom" constant="16" id="kSE-7u-RGb"/>
+                            <constraint firstAttribute="bottom" secondItem="MBU-wJ-EhY" secondAttribute="bottom" constant="17" id="kX7-29-xml"/>
+                            <constraint firstItem="MBU-wJ-EhY" firstAttribute="leading" secondItem="o6Y-z2-dkl" secondAttribute="trailing" constant="5" id="mUC-1g-n3C"/>
+                            <constraint firstItem="MBU-wJ-EhY" firstAttribute="centerY" secondItem="o6Y-z2-dkl" secondAttribute="centerY" id="rHE-MF-NXe"/>
+                            <constraint firstItem="7IL-bc-A4A" firstAttribute="top" secondItem="mr0-Hs-S9u" secondAttribute="top" constant="10" id="xrH-cN-yiK"/>
+                            <constraint firstItem="o6Y-z2-dkl" firstAttribute="leading" secondItem="mr0-Hs-S9u" secondAttribute="leading" constant="10" id="z0D-jx-AQS"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vDC-bV-p58">
+                        <rect key="frame" x="0.0" y="0.0" width="220" height="250"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="vDC-bV-p58" firstAttribute="top" secondItem="dYX-Bt-49o" secondAttribute="top" id="3CS-K2-PAO"/>
+                <constraint firstItem="mr0-Hs-S9u" firstAttribute="leading" secondItem="dYX-Bt-49o" secondAttribute="leading" id="9NQ-oH-ExB"/>
+                <constraint firstAttribute="bottom" secondItem="mr0-Hs-S9u" secondAttribute="bottom" id="HDJ-OV-wyq"/>
+                <constraint firstAttribute="trailing" secondItem="mr0-Hs-S9u" secondAttribute="trailing" id="J98-2d-CIE"/>
+                <constraint firstItem="vDC-bV-p58" firstAttribute="leading" secondItem="dYX-Bt-49o" secondAttribute="leading" id="OUm-MV-rMf"/>
+                <constraint firstAttribute="trailing" secondItem="vDC-bV-p58" secondAttribute="trailing" id="Zxq-tT-XQp"/>
+                <constraint firstItem="mr0-Hs-S9u" firstAttribute="top" secondItem="vDC-bV-p58" secondAttribute="bottom" id="fig-P4-e4J"/>
+            </constraints>
+            <connections>
+                <outlet property="NameLabel" destination="MBU-wJ-EhY" id="Bvb-pJ-Aqg"/>
+                <outlet property="ShopDes" destination="7IL-bc-A4A" id="gZt-X0-QML"/>
+                <outlet property="iconImageView" destination="o6Y-z2-dkl" id="rFt-XK-USP"/>
+                <outlet property="imageView" destination="vDC-bV-p58" id="I8x-cM-YgZ"/>
+            </connections>
+            <point key="canvasLocation" x="249" y="408"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="braceletLiked" width="75" height="75"/>
+        <image name="chatListCellHead" width="50" height="50"/>
+    </resources>
+</document>
