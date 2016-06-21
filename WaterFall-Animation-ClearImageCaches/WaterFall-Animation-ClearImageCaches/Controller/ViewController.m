@@ -88,8 +88,21 @@ static NSString *const ZBShopId = @"cell";
     UIActivityIndicatorView *circle = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     [circle startAnimating];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:circle];
-    // 清除图片缓存.注意:无法清除音频，视频缓存
+    // 清除图片缓存.注意:无法清除音频，视频缓存，因为SDWebImage底层是删除沙盒的Caches目录下的文件，又因为苹果底层是把图片缓存在Caches目录下的，所以可以利用SDWebImage删除图片缓存。当然,如果我们不做删除操作，这个图片缓存永久存在Caches目录下。而音频，视频缓存是存储在沙盒的tmp目录下的,会随时删除的
+    // 方法1:利用SDWebImage清除图片缓存
     [[SDImageCache sharedImageCache] clearDisk];
+    
+    /*
+     方法2:利用NSFileManager删除指定路径下的图片缓存
+     // 文件管理者
+     NSFileManager *mgr = [NSFileManager defaultManager];
+     // 缓存路径
+     NSString *caches = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
+     // 删除Caches目录下的缓存
+     [mgr removeItemAtPath:caches error:nil];
+
+     
+     */
     // 上述清除图片缓存之后，图片缓存肯定不存在了，我们把navigationItem的标题设置为0,方便提醒用户
     self.navigationItem.title = [NSString stringWithFormat:@"缓存大小(0.0M)"];
 }
